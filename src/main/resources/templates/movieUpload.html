@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+
+<!--suppress XmlInvalidId -->
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>Upload</title>
+</head>
+<body>
+<form action="/api/movies/add"
+      method="POST">
+    <div class="container">
+        <div class="info">
+            <div class="id">
+                <label for="id">Id:</label>
+                <input placeholder="ID" type="text" name="id" required /><br><br>
+                <label for="year">Year:</label>
+                <input placeholder="YEAR" type="text" name="year" required><br><br>
+            </div>
+            <div class="id">
+                <label for="name">Name:</label>
+                <input placeholder="NAME" type="text" name="name" required><br><br>
+                <label for="genre">Genre:</label>
+                <input placeholder="GENRE" type="text" name="genre" required><br><br>
+                <label for="dir">Director:</label>
+                <input placeholder="DIRECTOR" type="text" name="dir" required><br><br>
+            </div>
+        </div>
+        <button type="submit">Add Movie</button>
+    </div>
+</form>
+
+</body>
+</html>
